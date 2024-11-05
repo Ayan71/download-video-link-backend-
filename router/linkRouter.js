@@ -1,8 +1,9 @@
 import express from "express";
-import { videoDownload} from "../controller/linkController.js";
+import { videoDownload,demoDownload} from "../controller/linkController.js";
 
 const router = express.Router();
 
 router.post("/video",videoDownload)
+router.get("/demo",demoDownload)
 
 export default router;
