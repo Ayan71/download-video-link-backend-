@@ -116,3 +116,10 @@ export const videoDownload = async (req, res) => {
       .json({ message: "Server Error", error: error.message });
   }
 };
+
+export const demo=(req,res)=>{
+ return res.status(200).json({
+  success:true,
+  message:"yes its working"
+ })
+}
